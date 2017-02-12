@@ -13,6 +13,8 @@ p {
 </script>
 <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
 <div class="ball"></div>
+  <symbol id="nameplate">
+
 <svg width="600" height="300">
   <text id="" x="00" y="40" font-family="Raleway, sans-serif" font-size="40">Natalie</text>
   <circle id="fall" r="16" cx="172" cy="26" stroke="green" stroke-width=1 fill="white" />
@@ -26,7 +28,7 @@ p {
            dur="3s"
            begin="click"
            calcMode="spline"
-           values="50; 400; 400; 400; 400; 400; 400; 400"
+           values="50; 500; 500; 500; 450; 400; 400; 450"
            keyTimes="0; 0.15; 0.3; 0.45; 0.6; 0.75; 0.9; 1"
            keySplines="0.42 0 1 1;
                        0 0 0.59 1;
@@ -36,7 +38,9 @@ p {
                        0 0 0.59 1;
                        0.42 0 1 1"
            fill="freeze"  
-           id="circ-anim"/>  
+           id="circ-anim"/> 
+             </symbol>
+ 
 </svg>
 <svg class="defs-only" xmlns="http://www.w3.org/2000/svg">
   <symbol id="potofgold" >
@@ -227,9 +231,16 @@ p {
 
   </symbol>
 </svg>
-  <div style="margin-left: 30%">
+<div style="margin-left: 10">
+    <svg viewBox="0 0 600 300" preserveAspectRatio="xMidYMin slice"
+         width="30%" style="height: 1px; overflow: visible">
+      <use xlink:href="#nameplate"/>
+    </svg>
+  </div>
+
+  <div style="margin-left: 10">
     <svg viewBox="0 0 60 55" preserveAspectRatio="xMidYMin slice"
-         width="30%" style="padding-bottom: 92%; height: 1px; overflow: visible">
+         width="30%" style="; height: 1px; overflow: visible">
       <use xlink:href="#potofgold"/>
     </svg>
   </div>
